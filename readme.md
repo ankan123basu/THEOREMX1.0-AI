@@ -15,6 +15,7 @@
 ## 🎓 Introduction
 
 **THEOREM X** is an intelligent digital whiteboard that serves as a STEM learning companion, specializing in mathematical and physics problem-solving through natural handwriting input. Built with a retro pixel-art interface, it combines the power of Google Gemini AI with an intuitive drawing canvas to help students visualize and solve complex problems.
+
 <img width="1919" height="903" alt="Screenshot 2025-07-31 002447" src="https://github.com/user-attachments/assets/bf229743-38d9-48ad-b76e-a74c9e66aa21" />
 
 <img width="1919" height="907" alt="Screenshot 2025-07-31 002218" src="https://github.com/user-attachments/assets/01511d79-1522-4347-9f2c-15df996c1113" />
