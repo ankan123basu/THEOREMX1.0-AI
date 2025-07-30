@@ -144,18 +144,17 @@ A STEM companion is an AI-powered educational tool that assists with Science, Te
 
 ### Prerequisites
 
-- Python 3.10+
-- Node.js 18+
-- npm or yarn
+- Python 3.10 or later
+- Node.js 18+ and npm
 - Google Gemini API Key (Required)
-- (Optional) OpenAI API Key for enhanced explanations
+- Windows/Linux/macOS operating system
 
 ### Quick Start
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/yourusername/ai-magic-board.git
-   cd ai-magic-board
+   git clone https://github.com/ankan123basu/THEOREMX1.0-AI.git
+   cd THEOREMX-BOARD
    ```
 
 2. **Set up the backend**
@@ -169,32 +168,35 @@ A STEM companion is an AI-powered educational tool that assists with Science, Te
    pip install -r requirements.txt
 
    # Set up environment variables
-   echo "GEMINI_API_KEY=your_gemini_api_key_here" > .env
+   copy .env.example .env
+   # Edit .env and add your Gemini API key
    ```
 
 3. **Set up the frontend**
    ```bash
-   cd ../ai-whiteboard-frontend
+   cd THEOREMX-frontend
    npm install
+   # Install additional dependencies if needed
+   npm install axios react-katex @radix-ui/react-tooltip
    ```
 
 1. **Run the application**
    
    In one terminal (backend):
    ```bash
-   cd ../backend
-   uvicorn main:app --reload
+   cd backend
+   uvicorn main:app --reload --port 8000
    ```
 
    In another terminal (frontend):
    ```bash
-   cd ../ai-whiteboard-frontend
-   npm start
+   cd THEOREMX-frontend
+   npm run dev
    ```
 
 2. **Access the application**
    
-   Open your browser and navigate to `http://localhost:3000`
+   The application will be available at `http://localhost:5173`
 
 ## 🧠 How It Works (Technical Deep Dive)
 
@@ -245,7 +247,7 @@ def analyze_image(img: Image, dict_of_vars: dict):
 
 1. **Navigate to frontend directory**
    ```bash
-   cd ../frontend
+   cd THEOREMX-frontend
    ```
 
 2. **Install frontend dependencies**
@@ -268,7 +270,7 @@ def analyze_image(img: Image, dict_of_vars: dict):
 1. **Activate conda environment and start backend**
    ```bash
    conda activate ai-whiteboard
-   cd backend
+   cd THEOREMX-BOARD/backend
    python main.py
    ```
    
@@ -278,7 +280,7 @@ def analyze_image(img: Image, dict_of_vars: dict):
 
 2. **In a new terminal, start the frontend**
    ```bash
-   cd ai-whiteboard-frontend
+   cd THEOREMX-frontend
    npm run dev
    # Or using yarn:
    # yarn start
@@ -292,43 +294,32 @@ For production deployment:
 
 ```bash
 # Build frontend
-cd frontend
+cd THEOREMX-frontend
 npm run build
 
-# The built files will be in the 'build' directory
+# The built files will be in the 'dist' directory
 # Configure your backend to serve these static files
 ```
 
 ## 📁 Project Structure
 
 ```
-THEOREM-X/
-├── backend/                     # FastAPI backend
+THEOREMX-BOARD/
+├── THEOREMX-frontend/    # React + TypeScript frontend
+│   ├── public/           # Static assets
+│   ├── src/              # Frontend source code
+│   │   ├── components/   # Reusable UI components
+│   │   ├── screens/      # Page components
+│   │   └── ...
+│   └── package.json      # Frontend dependencies
+├── backend/              # FastAPI backend
 │   ├── apps/
-│   │   └── calculator/         # Core AI and calculation logic
-│   │       ├── __init__.py
-│   │       ├── config.py       # Configuration settings
-│   │       ├── route.py        # API endpoints
-│   │       └── utils.py        # Utility functions and AI integration
-│   ├── .env.example            # Environment variables template
-│   ├── main.py                 # FastAPI application entry point
-│   └── requirements.txt        # Python dependencies
-│
-├── ai-whiteboard-frontend/     # React frontend
-│   ├── public/                # Static assets
-│   └── src/
-│       ├── components/        # Reusable UI components
-│       │   ├── LatexRenderer/ # For rendering mathematical equations
-│       │   └── UI/            # Common UI elements
-│       │
-│       ├── screens/           # Page components
-│       │   └── home/          # Main application screen
-│       │       └── index.tsx  # Main component with canvas and UI
-│       │
-│       ├── App.tsx            # Main application component
-│       └── main.tsx           # Application entry point
-│
-└── README.md                  # Project documentation
+│   │   └── calculator/   # Core calculation logic
+│   │       ├── route.py  # API endpoints
+│   │       └── utils.py  # AI integration and calculations
+│   ├── main.py           # FastAPI application
+│   └── requirements.txt  # Python dependencies
+└── readme.md             # Project documentation
 ```
 
 ## 🚀 Future Enhancements
