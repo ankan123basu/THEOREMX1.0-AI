@@ -15,6 +15,23 @@
 ## 🎓 Introduction
 
 **THEOREM X** is an intelligent digital whiteboard that serves as a STEM learning companion, specializing in mathematical and physics problem-solving through natural handwriting input. Built with a retro pixel-art interface, it combines the power of Google Gemini AI with an intuitive drawing canvas to help students visualize and solve complex problems.
+<img width="1919" height="903" alt="Screenshot 2025-07-31 002447" src="https://github.com/user-attachments/assets/bf229743-38d9-48ad-b76e-a74c9e66aa21" />
+
+<img width="1919" height="907" alt="Screenshot 2025-07-31 002218" src="https://github.com/user-attachments/assets/01511d79-1522-4347-9f2c-15df996c1113" />
+
+<img width="1919" height="911" alt="Screenshot 2025-07-31 001828" src="https://github.com/user-attachments/assets/13451ca9-49c5-4f34-b65f-cd97316dda29" />
+
+<img width="1919" height="916" alt="Screenshot 2025-07-31 010103" src="https://github.com/user-attachments/assets/7da6eea8-e2ab-4671-8c5a-efbe04dea289" />
+
+<img width="1919" height="909" alt="Screenshot 2025-07-31 002600" src="https://github.com/user-attachments/assets/58aceba1-4f8d-4c5d-b695-3e293fb15c05" />
+
+<img width="1919" height="667" alt="Screenshot 2025-07-31 002253" src="https://github.com/user-attachments/assets/2c8e5802-3635-47de-8159-ee5c363ad724" />
+
+
+<img width="1919" height="667" alt="Screenshot 2025-07-31 002253" src="https://github.com/user-attachments/assets/fdd0b087-e24f-484d-8b72-fa6a85f4dadd" />
+
+
+
 
 ### 🎯 What is a STEM Companion?
 
