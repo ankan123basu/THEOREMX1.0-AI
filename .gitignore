@@ -1,0 +1,83 @@
+# Ignore OS-specific files
+.DS_Store
+Thumbs.db
+*.swp
+
+# Ignore IDE-specific files
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Ignore Node.js dependencies and build files
+node_modules/
+npm-debug.log
+yarn-error.log
+dist/
+build/
+*.tsbuildinfo
+
+# Ignore Python-specific files
+__pycache__/
+*.py[cod]
+*.so
+*.egg
+*.egg-info/
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+pip-log.txt
+
+# Ignore compiled files
+*.class
+*.exe
+*.dll
+*.obj
+*.o
+*.a
+*.lib
+*.so
+*.dylib
+
+# Ignore logs and databases
+*.log
+*.sql
+*.sqlite
+*.db
+
+# Ignore environment files
+.env
+.env.local
+.env.development
+.env.test
+.env.production
+
+# Ignore dependency directories
+jspm_packages/
+bower_components/
+
+# Ignore debug files
+*.log
+debug/
+*.pid
+
+# Ignore coverage directories
+coverage/
+.nyc_output/
+
+# Ignore generated files
+dist/
+out/
+*.min.js
+*.min.css
+
+# Ignore package manager files
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
